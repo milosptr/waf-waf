@@ -7,8 +7,8 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: content/about
-  label: About
+  path: content/index
+  label: Homepage
   create: none
   match: "*"
 - type: directory
