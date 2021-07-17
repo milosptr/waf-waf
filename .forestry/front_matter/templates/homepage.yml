@@ -1,4 +1,26 @@
 ---
 label: Homepage
 hide_body: true
-fields: []
+fields:
+- name: hero_images
+  type: file
+  config:
+    maxSize: 64
+  label: Hero images
+  description: "(upload at least 2 images for the hero title)"
+- name: hero_title
+  type: text
+  config:
+    required: true
+  label: Hero Title
+  description: "(title under the first image)"
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
+  description: "(content after hero section)"
