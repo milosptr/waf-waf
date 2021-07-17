@@ -24,3 +24,26 @@ fields:
       format: markdown
   label: Subtitle
   description: "(content after hero section)"
+- name: blogs
+  type: blocks
+  label: Blogs
+  template_types:
+  - post
+  config:
+    min: 
+    max: 
+  hidden: true
+- name: homepage_images_showcase
+  type: field_group_list
+  fields:
+  - name: first_showcase_image
+    type: file
+    config:
+      maxSize: 64
+    label: First showcase image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Homepage Images Showcase
+  description: Add showcase images on the homepage
