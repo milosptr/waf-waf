@@ -25,6 +25,11 @@ fields:
       format: markdown
   label: Subtitle
   description: "(content after hero section)"
+- name: showcase_images
+  type: image_gallery
+  config: {}
+  label: Showcase Images
+  description: Upload even number of images
 - name: blogs
   type: blocks
   label: Blogs
@@ -34,20 +39,6 @@ fields:
     min: 
     max: 
   hidden: true
-- name: homepage_images_showcase
-  type: field_group_list
-  fields:
-  - name: first_showcase_image
-    type: file
-    config:
-      maxSize: 64
-    label: First showcase image
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Homepage Images Showcase
-  description: Add showcase images on the homepage
 - name: breakfast_title
   type: text
   config:
