@@ -3,20 +3,21 @@ label: Homepage
 hide_body: true
 fields:
 - name: hero_images
-  type: file
-  config:
-    maxSize: 64
-  label: Hero images
-  description: "(upload at least 2 images for the hero title)"
+  type: image_gallery
+  config: {}
+  label: Hero Images
+  description: Upload at least 2 images here
 - name: hero_title
   type: text
   config:
     required: true
   label: Hero Title
   description: "(title under the first image)"
+  default: Ty nejlepší vafle
 - name: subtitle
   type: textarea
-  default: ''
+  default: Waf-Waf to jsou ty nejlepší vafle, palacinky a lívance, které jste meli
+    možnost ochutnat.
   config:
     required: true
     wysiwyg: false
@@ -47,3 +48,21 @@ fields:
     labelField: 
   label: Homepage Images Showcase
   description: Add showcase images on the homepage
+- name: breakfast_title
+  type: text
+  config:
+    required: true
+  label: Breakfast Title
+  default: Snídaňová nabídka Každý všední den od 08:00 – 11:00
+- name: breakfast_image
+  type: file
+  config:
+    maxSize: 64
+  label: Breakfast Image
+  default: "/images/breakfast.png"
+- name: delivery_title
+  type: text
+  config:
+    required: true
+  label: Delivery Title
+  default: Rozvážíme každý den od 08:00 do 21:00
