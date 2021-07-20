@@ -6,7 +6,7 @@ languageCode = "pl-PL"
 languageName = "PL"
 paginate = "6"
 summaryLength = "10"
-theme = "github.com/themefisher/twenty-twenty-hugo"
+theme = "https://github.com/milosptr/wafwaf-theme.git"
 title = "Waf Waf - Crepes & Waffles"
 [markup.goldmark.renderer]
 unsafe = true
